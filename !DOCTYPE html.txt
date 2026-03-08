@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>مكتبة لبيبة المستقبل | عالم القراءة الرقمي</title>
+    <meta name="description" content="المكتبة الرقمية التفاعلية للطالبة رنا الحجري - وجهتك الأولى للقصص والأنشطة التعليمية المبتكرة.">
+    
+    <meta property="og:title" content="مكتبة لبيبة المستقبل">
+    <meta property="og:description" content="استكشف قصصاً تفاعلية وأنشطة ذهنية ممتعة في مدرسة المستقبل.">
+    <meta property="og:image" content="cover-image.jpg"> <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #6C63FF; /* بنفسجي Hololive العصري */
+            --secondary-color: #FF6584; /* وردي حيوي */
+            --bg-light: #F8FAFC;
+            --text-dark: #2D3436;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* تنسيق الهيدر الاحترافي */
+        header {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area img {
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-color);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* قسم الترحيب الرئيسي */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+            clip-path: ellipse(150% 100% at 50% 0%); /* حركة تصميم احترافية */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        /* شبكة الكتب (Grid) */
+        .library-section {
+            padding: 60px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.4s;
+            border-bottom: 5px solid transparent;
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        .book-content {
+            padding: 25px;
+        }
+
+        .tag {
+            background: #E0E7FF;
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="rana-avatar.png" alt="رنا الحجري"> <h2 style="color: var(--primary-color);">لبيبة المستقبل</h2>
+        </div>
+        <div class="nav-links">
+            <a href="#">الرئيسية</a>
+            <a href="#">القصص</a>
+            <a href="#">عن المشروع</a>
+        </div>
+        <img src="school-logo.png" alt="شعار المدرسة" style="height: 50px;"> </header>
+
+    <section class="hero">
+        <h1>مرحباً بكم في عالم الذكاء والابتكار</h1>
+        <p style="font-size: 1.2rem;">نصنع المستقبل من خلال القراءة الرقمية التفاعلية</p>
+        <button style="background: white; color: var(--primary-color); border: none; padding: 15px 40px; border-radius: 50px; font-weight: bold; margin-top: 20px; cursor: pointer;">ابدأ الاستكشاف</button>
+    </section>
+
+    <div class="library-section">
+        <div class="book-card">
+            <div style="height: 200px; background: #ddd;"></div> <div class="book-content">
+                <span class="tag">قصص تفاعلية</span>
+                <h3>رحلة لبيبة في فضاء التقنية</h3>
+                <p>تعلم أساسيات البرمجة بأسلوب قصصي ممتع.</p>
+                <a href="#" style="color: var(--secondary-color); font-weight: bold;">اقرأ الآن ←</a>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div style="height: 200px; background: #eee;"></div>
+            <div class="book-content">
+                <span class="tag">تحديات ذهنية</span>
+                <h3>لغز مدرسة المستقبل</h3>
+                <p>مجموعة من الألغاز الذكية لتنشيط العقل وتنمية التفكير.</p>
+                <a href="#" style="color: var(--secondary-color); font-weight: bold;">شارك في التحدي ←</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>تم التطوير بكل حب بواسطة <strong>رنا عبد الواحد الحجري</strong></p>
+        <p>© 2026 مدرسة المستقبل للذكاء الاصطناعي</p>
+    </footer>
+
+</body>
+</html>
